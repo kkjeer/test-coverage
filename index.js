@@ -6,6 +6,11 @@ function subtract(x, y) {
     return x - y;
 }
 
+// Intentionally not tested so that coverage is less than 100%.
+function notTested() {
+    return 42;
+}
+
 function numberDescription(n) {
     if (n == 0) {
         return 'Zero';
