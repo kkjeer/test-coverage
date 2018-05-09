@@ -4,9 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "jest",
-    "coverage": "jest --coverage",
-    "verify": "npm install && npm run coverage"
+    "test": "jest --coverage",
+    "coveralls": "cat ./coveralls/lcov.info | coveralls",
+    "clean": "rm -rf ./coveralls",
+    "ci-build": "npm install && npm run test && npm run coveralls && npm run clean"
   },
   "repository": {
     "type": "git",
@@ -18,7 +19,8 @@
     "url": "https://github.com/kkjeer/test-coverage/issues"
   },
   "homepage": "https://github.com/kkjeer/test-coverage#readme",
-  "dependencies": {
+  "devDependencies": {
+    "coveralls": "3.0.1",
     "jest": "22.4.3"
   },
   "jest": {
