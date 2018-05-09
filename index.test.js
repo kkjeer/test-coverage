@@ -23,6 +23,10 @@ describe('numberDescription', () => {
         const result = functions.numberDescription(-1);
         expect(result).toBe('Negative');
     });
+    it('returns Zero for 0', () => {
+        const result = functions.numberDescription(0);
+        expect(result).toBe('Zero');
+    });
 });
 
 describe('filterArray', () => {

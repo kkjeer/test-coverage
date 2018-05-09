@@ -6,13 +6,7 @@ function subtract(x, y) {
     return x - y;
 }
 
-// Intentionally not tested so that coverage is not 100%
-function multiply(x, y) {
-    return x * y;
-}
-
 function numberDescription(n) {
-    // Intentionally not tested so that coverage is not 100%
     if (n == 0) {
         return 'Zero';
     }
@@ -37,7 +31,6 @@ function filterArray(arr) {
 module.exports = {
     'add': add,
     'subtract': subtract,
-    'multiply': multiply,
     'numberDescription': numberDescription,
     'filterArray': filterArray
 };
